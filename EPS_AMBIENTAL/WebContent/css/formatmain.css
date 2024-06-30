@@ -1,0 +1,1261 @@
+@font-face {
+    font-family: 'Poppins-Ligth';
+    src: url('fonts/Poppins-Ligth.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('fonts/Poppins-Medium.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url('fonts/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+body {
+	font-family: 'Poppins-Regular';
+	margin: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+/**************************************************************************************************
+***************************************************************************************************
+									 SCROLLL DE LA PAGINA 
+***************************************************************************************************
+****************************************************************************************************/
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
+.scroll-page {
+  	display: flex;
+  	height: 100%; /* 100% of the viewport height */
+  	width: 100%;    /* 100% of the parent's width */
+}
+
+.container {
+	height: 100%;
+    width: 100%;
+	max-width: none; /* Allow the container to expand beyond its specified max-width */
+}
+
+
+/**************************************************************************************************
+***************************************************************************************************
+									MENU DE LA PAGINA 
+***************************************************************************************************
+****************************************************************************************************/
+
+.navbar {
+	background-color: #136A3A;
+	height: 6.2vw;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 21px;
+  float: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+}
+
+.navbar a:hover {
+  background-color: #FFFFFF;
+  color: #136A3A;
+}
+
+.navbar i:hover {
+  background-color: #FFFFFF;
+  color: #136A3A;
+}
+
+.navbar i {
+  float: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  padding-bottom: 2.3%;
+  padding-left: 1%;
+  font-size:2vw;
+  color: #f2f2f2;
+}
+
+.navbar img {
+	float: none;
+	padding-left: 5%;
+	height: 5vw;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 3vw;
+  right: 2vw;
+  font-size:4vw;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/***********************************************************************
+ ***********************************************************************
+						 MENU DESPLEGABLE
+ ***********************************************************************
+ ***********************************************************************/
+ 
+ 
+.sidebar {
+  font-family: 'Poppins-Regular';
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5vw;
+}
+
+.sidebar a {
+  font-family: 'Poppins-Regular';
+  text-decoration: none;
+  font-size: 21px;
+  padding-top: 0;
+  color: #136A3A;
+  display: block;
+  transition: 0.3s;
+  padding-top: 2vw;
+  padding-left: 2vw;
+}
+
+.sidebar i {
+  color: #00c20d;
+}
+.sidebar i:hover {
+	color: #808080;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0.5vw;
+  right: 1.5vw;
+  font-size: 2vw;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/***********************************************************************
+ ***********************************************************************
+ 							IMAGEN ENCABEZADO 
+************************************************************************
+************************************************************************/
+
+.header_image {
+	height: 39.5vw;
+    width: 98.9vw;
+}
+
+.header_image,
+#ww_d2c5aed42efd6 {
+  margin: 0;
+  padding: 0;
+  vertical-align: top; /* or middle, bottom, etc. */
+}
+
+.header_text {
+	font-family: 'Anton-Regular';
+	position: relative;
+    bottom: 10vw;
+  	right: 2vw;
+   	font-size: 36px;
+  	font-weight: bold;
+  	text-align: right;
+}
+
+mark { 
+  background-color: #8fc145;
+  color: #ffffff;
+  opacity: .95;
+}
+
+/***********************************************************************
+ **************************** SECCION 1 ********************************
+                    1. IMAGEN AL LADO IZQUIERDO
+                    2. TITULO PRINCIPAL AL LADO DERECHO
+                    2. TEXTO AL LADO DERECHO
+ ***********************************************************************
+ ***********************************************************************/
+
+.section1 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+
+.section1 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:5vw;
+	text-align: center;
+}
+
+.section1 h2 {
+	color: #136A3A;
+	font-size:3vw;
+	padding-top: 5%;
+	float: none;
+}
+
+.section1 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 3%;
+}
+
+
+.section1 img {
+	height: 45%;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+.section1 iframe
+{
+	height: 720;
+	width:  420;
+	padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+.section1 button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25vw;
+	height: 5vw;
+	border: none;
+}
+
+#map {
+	height: 50%;
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+#map2 {
+	height: 50%;
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+#map3 {
+	height: 50%;
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+/***********************************************************************
+ **************************** SECCION 2 ********************************
+                    1. IMAGEN AL LADO DERECHO
+                    2. TITULO PRINCIPAL AL LADO IZQUIERDO
+                    2. TEXTO AL LADO IZQUIERDO
+ ***********************************************************************
+ ***********************************************************************/
+
+.section2 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+
+.section2 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:5vw;
+	text-align: center;
+}
+
+.section2 h2 {
+	color: #136A3A;
+	font-size:3vw;
+	padding-top: 5%;
+	float: none;
+}
+
+.section2 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 3%;
+}
+
+.section2 img {
+	height: 45%;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+.section2 button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25vw;
+	height: 5vw;
+	border: none;
+}
+
+
+/***********************************************************************
+ **************************** SECCION 3 ********************************
+                    1. IMAGEN AL LADO IZQUIERDO
+                    2. TITULO PRINCIPAL AL LADO DERECHO
+                    2. TEXTO AL LADO DERECHO
+                    3. BOTON OPCIONAL
+ ***********************************************************************
+ ***********************************************************************/
+
+.section3 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+.section3 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:4vw;
+	text-align: center;
+	padding-right: 5%;
+}
+
+.section3 h2 {
+	color: #136A3A;
+	padding-top: 5%;
+	float: none;
+	font-size:3vw;
+}
+
+.section3 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 5vw;
+    font-size:1vw;
+}
+
+
+.section3 img {
+	width: 48vw;
+	height: 22vw;
+    padding-left: 5%;
+    padding-right: 3%;
+	float: left;
+}
+
+.section3 button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 38vw;
+	height: 4vw;
+	border: none;
+}
+
+/***********************************************************************
+ **************************** SECCION 4 ********************************
+                    1. IMAGEN AL LADO IZQUIERDO
+                    2. TITULO PRINCIPAL AL LADO DERECHO
+                    2. TEXTO AL LADO DERECHO
+                    3. ENLACE OPCIONAL
+ ***********************************************************************
+ ***********************************************************************/
+
+.section4 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+.section4 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:4vw;
+	text-align: center;
+	padding-right: 5%;
+}
+
+.section4 h2 {
+	color: #136A3A;
+	padding-top: 5%;
+	float: none;
+	font-size:3vw;
+}
+
+.section4 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 5vw;
+    font-size:1vw;
+}
+
+.section4 img {
+	width: 48vw;
+	height: 27vw;
+    padding-left: 5%;
+    padding-right: 3%;
+	float: left;
+}
+
+.section4 button{
+	font-family: 'Poppins-Regular';
+	background-color: #002C74;
+	color: #ffffff;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 38vw;
+	height: 4vw;
+	border: none;
+}
+
+/***********************************************************************
+ **************************** SECCION 5 ********************************
+                    1. IMAGEN AL LADO DERECHO
+                    2. TITULO PRINCIPAL AL LADO IZQUIERDO
+                    2. TEXTO AL LADO IZQUIERDO
+                    3. BOTON OPCIONAL
+ ***********************************************************************
+ ***********************************************************************/
+
+.section5 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+.section5 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:5vw;
+	text-align: center;
+}
+
+.section5 h2 {
+	color: #136A3A;
+	padding-top: 5%;
+	float: none;
+	font-size:3vw;
+}
+
+.section5 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 3%;
+}
+
+.section5 img {
+	height: 45%;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+.section5 button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25vw;
+	height: 5vw;
+	border: none;
+}
+
+/***********************************************************************
+ **************************** SECCION 6 ********************************
+                    1. IMAGEN AL LADO DERECHO
+                    2. TITULO PRINCIPAL AL LADO IZQUIERDO
+                    2. TEXTO AL LADO IZQUIERDO
+                    3. ENLACE OPCIONAL
+ ***********************************************************************
+ ***********************************************************************/
+
+.section6 {
+	height: 100%; /* Take up the full height of its parent (.container) */
+  	width: 100%;  /* Take up the full width of its parent (.container) */
+}
+
+.section6 h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size:5vw;
+	text-align: center;
+}
+
+.section6 h2 {
+	color: #136A3A;
+	padding-top: 5%;
+	float: none;
+	font-size:3vw;
+}
+
+.section6 h3 {
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	text-align: justify;
+    padding-right: 3%;
+}
+
+.section6 img {
+	height: 45%;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: left;
+}
+
+.section6 button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25vw;
+	height: 5vw;
+	border: none;
+}
+
+/*************************************************************************************************************************
+ **************************** SECCION 10 **********************************************************************************
+ 					1. IMAGEN SUPERIOR
+                    2. TITULO PRINCIPAL DEBAJO DE LA IMAGEN 
+                    2. TEXTO INFERIOR AL TITULO
+                    3. BOTON OPCIONAL (PARTE INFERIOR TEXTO)
+ *************************************************************************************************************************
+ *************************************************************************************************************************/
+ 
+.section10{
+	padding-top: 0;
+}
+
+.section10 table{
+ 	border-collapse: collapse;
+  	width: 95%;
+}
+
+.section10 tr{
+	border: 0;
+}
+
+.section10 td{
+	font-family: 'Poppins-Regular';
+	height: 20vw;
+	width: 10vw;
+	padding: 0;
+	border: 1vw solid #ffffff;
+}
+
+#img10 {
+	padding-left: 0;
+	padding-bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.section10 h2{
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.section10 h3{
+	font-family: 'Poppins-Regular';
+	color: #000000;
+	font-size: 1.2vw;
+	text-align: justify;
+}
+
+/******************************************************************************************************************
+ **************************** SECCION QUE ESPERAMOS ***************************************************************
+ ******************************************************************************************************************
+ *****************************************************************************************************************/
+.sectionQE {
+	height: 50vw;
+    width: 98.9vw;
+}
+
+.sectionQE h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	padding-top: 5%;
+	float: none;
+	font-size:3vw;
+}
+
+.sectionQE h3 {
+	font-family: 'Poppins-Regular';
+	color: #136A3A;
+	text-align: justify;
+    padding-right: 3%;
+    font-size:1.2vw;
+}
+
+.sectionQE img {
+	height: 45%;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 3%;
+	float: left;
+}
+
+.sectionQE br {
+    display: block;
+    margin-top: 10em;
+}
+
+.sectionprg table{
+ 	border-collapse: collapse;
+  	width: 90%;
+  	margin-right:auto;
+  	margin-left: 5vw;
+}
+
+.sectionprg td{
+	font-family: 'Poppins-Regular';
+	height: 13vw;
+	width: 15vw;
+	padding: 0;
+	border: 3px solid #ffffff;
+}
+
+.sectionprg tr{
+	border: 0;
+}
+
+.sectionprg h2{
+	font-family: 'Poppins-Regular';
+	color: #ffffff;
+	font-size: 2vw;
+	padding-left: 30%;
+	padding-top: 10%;
+	
+}
+
+#imgprg {
+	padding-left: 0;
+	padding-bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.sectionprg h3{
+	color: #126B3B;
+	font-size: 1.2vw;
+	text-align: center;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.sectionprg h4{
+	font-family: 'Poppins-Regular';
+	color: #5a7c66;
+	font-size: 1.2vw;
+	text-align: justify;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+}
+
+.sectionprg i{
+	color: #ffffff;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.sectionprg a{
+	padding-left: 2vw;
+}
+
+.sectionprg button{
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25vw;
+	height: 5vw;
+	border: none;
+}
+
+
+
+/***********************************************************************************************************************
+ **************************** SECCION CARRUSEL *************************************************************************
+                    1. TITULO
+                    2. CARRUSEL
+ **********************************************************************************************************************
+ **********************************************************************************************************************/
+
+.carrusel {
+    width:100%;
+    left:12%;
+    position:absolute;
+    z-index:0;
+}
+
+#carrusel {
+    width:90vw; 
+    height:30vw;
+    overflow:hidden;
+    position:relative;
+    margin-bottom:5%;
+}
+
+.seccarrusel h1 {
+	font-family: 'Anton-Regular';
+	color: #136A3A;
+	padding-top: 3%;
+	float: none;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.carrusel h5 {
+	position: absolute;
+	color: #ffffff;
+    font-size:2vw;
+    left: 10%;
+    top: -2vw;
+}
+
+
+#carrusel .left-arrow {
+    position:absolute;
+    left:13%;
+    z-index:1;
+    top:50%;
+    margin-top:-20vw;
+    font-size:4vw;
+    color: #F6F6F6;
+}
+
+#carrusel .right-arrow {
+    position:absolute;
+    right:5%;
+    z-index:1;
+    top:50%;
+    margin-top:-20vw;
+    font-size:4vw;
+    color: #F6F6F6;
+}
+
+.carrusel>div {
+    float: left;
+    height: 25vw;
+    margin-right: 1%;
+    width: 18vw;
+    text-align:center;
+    background-color: #CCF0E1;
+}
+
+.carrusel img {
+    cursor:pointer;
+    height: 10vw;
+    width: 10vw;
+    padding-top: 15%;
+    text-align:center;
+}
+
+.eventotag {
+	background-color: #136A3A;
+	font-family: 'Anton-Regular';
+	position: absolute;
+	height: 5vw;
+    width: 18vw;
+    bottom: 0;
+}
+
+.product {
+    border:#CCCCCC 1px solid;
+}
+
+/**********************************************************************************************************************
+ **************************** SECCION MENU ****************************************************************************
+                    	 1. Tabla con cuadricula de iconos
+                    	 2. Cada cuadro es un enlace a otras páginas
+ **********************************************************************************************************************
+ **********************************************************************************************************************/
+ 
+ 
+ .section_menu {
+	height: 50vw;
+    width: 98.9vw;
+}
+
+.section_menu h1 {
+	color: #136A3A;
+	font-size:2vw;
+	text-align: center;
+}
+
+.section_menu h3 {
+	color: #000000;
+	text-align: justify;
+    padding-right: 3%;
+}
+
+
+.section_menu table {
+ 	border-collapse: collapse;
+  	width: 80%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.section_menu td {
+	  font-family: 'Poppins-Regular';
+	  width: 30%;
+	  text-align: justify;
+	  vertical-align: top;
+	  border-right: 1vw solid #ffffff;
+}
+
+.section_menu img {
+	height: 250px;
+    width:  250px;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+	float: center;
+}
+
+.section_menu .text-below {
+	font-family: 'Poppins-Regular';
+	width:  250px;
+    text-align: center; /* Center the text */
+    white-space: normal;
+}
+
+/*****************************************************************************************************************
+ ***************************************************************************************************************** 
+ 					SECCION TABLA CON COLORES 
+                    1. TABLA CON UNA SOLA FILA 
+                    2. CADA CELDA DE LA FILA TIENE UN COLOR
+                    3. DENTRO DE CADA CELDA SE COLCA UN TEXTO
+                    4. CADA CELDA TIENE UNA IMAGEN INTERNA
+ *****************************************************************************************************************
+ *****************************************************************************************************************/
+
+
+
+.section_color_table table {
+ 	border-collapse: collapse;
+ 	heigth: 100%; /* Take up the full height of its parent (.container) */
+  	width: 80%;   /* Take up the full width of its parent (.container) */
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.section_color_table th {
+	  font-family: 'Anton-Regular';
+	  border-right: 1vw solid #ffffff;
+	  color: #ffffff;
+	  padding-bottom: 1%;
+	  padding-top: 1%;
+	  width: 30%;
+}
+
+.section_color_table td {
+	  font-family: 'Poppins-Regular';
+	  border-right: 1vw solid #ffffff;
+	  color: #ffffff;
+	  text-align: justify;
+	  vertical-align: top;
+	  width: 30%;
+}
+
+#th1 {
+	background-color: #8FC145;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#th2 {
+	background-color: #47C8E2;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#th3 {
+	background-color: #FABA28;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#td1 {
+	font-family: 'Poppins-Regular';
+	background-color: #8FC145;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#td2 {
+	font-family: 'Poppins-Regular';
+	background-color: #47C8E2;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#td3 {
+	font-family: 'Poppins-Regular';
+	background-color: #FABA28;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#imgtd1 {
+    background-color: #8FC145;
+    height: 10vw;
+}
+
+#imgth1 {
+    background-color: #8FC145;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3%;
+}
+
+#imgtd2 {
+    background-color: #47C8E2;
+    height: 10vw;
+}
+
+#imgth2 {
+    background-color: #47C8E2;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+   	padding-top: 5%;
+}
+
+#imgtd3 {
+    background-color: #FABA28;
+    height: 10vw;
+}
+
+#imgth3 {
+    background-color: #FABA28;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+
+/***********************************************************************
+ **************************** SECCION FOOTER ********************************
+                    1. 
+                    2. 
+ ***********************************************************************/
+.footer {
+	padding-top: 2vw;
+	height: 8vw;
+	text-align:center;
+}
+
+.footersec1{
+	padding-top: 2vw;
+	background-color: #F9DB00;
+	padding-bottom: 0.2vw;
+}
+
+.footersec1 h4{
+	text-align:center;
+	color: #136A3A;
+}
+
+.footersec1 i{
+	font-size:2vw;
+	color: #136A3A;
+	padding-right: 3vw;
+	padding-left: 3vw;
+	padding-top: 0.2vw;
+}
+
+.footersec2{
+	padding-left: 0%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+}
+
+.footersec2 img{
+	height: 5vw;
+	width: 10vw;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	padding-top: 0.1vw;
+	padding-bottom: 0.1vw;
+}
+
+
+/***********************************************************************
+ **************************** ADMIN PAGE ********************************
+
+ ***********************************************************************/
+.row {
+  height: 65%;
+  padding-top: 0;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding-left: 1vw;
+  padding-top: 0;
+}
+
+.row:after {
+  	display: table;
+  	clear: both;
+}
+
+.row h5 {
+    font-size:2vw;
+    color: #136A3A;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+/***********************************************************************
+ **************************** CONSTRUCCION PAGE ********************************
+
+ ***********************************************************************/
+.paginaCons{
+ 	text-align:center;
+ }
+ 
+ .paginaCons i {
+ 	color: #136A3A;
+ 	font-size:15vw;
+ 	padding-top: 7vw;
+ }
+ 
+  .paginaCons h1 {
+ 	color: #136A3A;
+ 	font-size:5vw;
+ }
+ 
+ /***********************************************************************
+ **************************** PRINCIPAL PAGE ********************************
+
+ ***********************************************************************/
+ 
+.paginaPrincipal{
+	padding-top: 3%;
+	padding-left: 15%;
+}
+ 
+.paginaPrincipal table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.paginaPrincipal td{
+  border: 0.2vw solid #dddddd;
+  text-align: left;
+  width: 33%;
+  text-align: center;
+}
+
+.paginaPrincipal th {
+	text-align: center;
+  	border: 0.2vw solid #dddddd;
+  	color: #136A3A;
+ 	font-size:2vw;
+}
+
+#tdcodigo{
+	width: 15%;
+	text-align: center;
+}
+
+
+#btnedit {
+	background-color: #FABA2B;
+	border: none;
+	color: white;
+	padding: 0.2vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1vw;
+	margin: 0.1vw 0.1vw;
+	cursor: pointer;
+	height: 1.5vw;
+	width: 6vw;
+
+}
+#btnvisible {
+	background-color: #46C0EF;
+	border: none;
+	color: white;
+	padding: 0.2vw;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1vw;
+	margin: 0.1vw 0.1vw;
+	cursor: pointer;
+	height: 1.5vw;
+	width: 6vw;
+} 
+
+#accionesTBAdmin {
+	text-align: center;
+}
+
+#labelmodpag {
+	font-size: 1.2vw;
+	display: inline-block;
+    width: 7vw;
+    text-align: left;
+}
+
+
+#labelmodsec {
+	font-size: 1.2vw;
+	display: inline-block;
+    width: 12vw;
+    text-align: left;
+}
+
+.brlarge { 
+	display: block;
+	margin-bottom: 2em;  
+}
+
+.brmedium { 
+	display: block;
+	margin-bottom: 1em;  
+}
+
+.brsmall { 
+	display: block;
+	margin-bottom: 0.5em;  
+} 
+
+#divModAdmin input[type="text"] {
+	width: 23vw;
+}
+
+#divModSec input[type="text"] {
+	width: 30vw;
+}
+
+#divModAdmin {
+	width: 35%;
+}
+
+#tituloSugere {
+	font-size: 4vw;
+	color: #FABA2B;
+	padding-top: 1vw;
+	padding-left: 2vw;
+}
+
+#labelsub {
+	font-size: 1.5vw;
+	padding-left: 10vw;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 15vw;
+}
+
+#name_to {
+	font-size: 1.5vw;
+    width: 32vw;
+    border: 0.2VW solid #ccc;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+}
+
+#email_to {
+	font-size: 1.5vw;
+    width: 32vw;
+    border: 0.2VW solid #ccc;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+}
+
+#message_email {
+	font-size: 1.5vw;
+    width: 32vw;
+    border: 0.2VW solid #ccc;
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+}
+
+#bttnsug {
+	font-size: 1.2vw;
+	display: inline-block;
+	width: 10vw;
+	height: 3vw;
+	margin-left: 35vw;
+	background-color: #5841b5;
+	border: 0.1vw solid #dddddd;
+	border-radius: 0.5vw;
+	color: #FFFFFF;
+}
+
+#fomsug {
+	padding-left: 10%;
+}
+

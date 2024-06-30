@@ -1,0 +1,473 @@
+body {
+	margin: 0;
+}
+
+/********** DIV PRINICPAL DE  LA PAGINA ********/
+.navbar {
+	background-color: #212121;
+	height: 3vw;
+	padding-left: 3vw;
+}
+
+.navbar img {
+	float: right;
+	height: 3vw;
+	padding-right: 2%;
+}
+
+
+/********** MENU DEL FORMULARIO LA PAGINA ********/
+
+.div-menu-formulario {
+	padding-top: 1.5%;
+	background-color: #FFFFFF;
+	height: 4vw;
+	padding-left: 3.5%;
+}
+
+.div-menu-formulario label {
+	font-size:2vw;
+	color: #00A8CC;
+	padding-left: 1vw;
+}
+
+.div-menu-formulario button{
+  border: none;
+  text-decoration: none;
+  font-size: 1vw;
+  margin: 0.5vw 1vw;
+  cursor: pointer;
+  height: 2vw;
+  width: 8vw;
+}
+
+.div-buscar{
+	float: right;
+	padding-right: 2%;
+	padding-top: 1%;
+}
+
+.button1 {
+	border-radius: 2px;
+ 	background-color: #EEEEEE;
+ 	float: right;
+ 	color: #00A8CC;
+ 	text-align: center;
+}
+
+.buttonback {
+	border-radius: 2px;
+ 	background-color: #C1D8C3;
+ 	float: right;
+ 	color: #186F65;
+ 	text-align: center;
+}
+
+.buttonback:hover {
+  background-color: #7EAA92;
+  color: #EEEEEE;
+}
+
+.button1:hover {
+  background-color: #00A8CC;
+  color: #EEEEEE;
+}
+
+.div-menu-formulario a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size:3vw;
+  float: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  padding-bottom: 2%;
+  padding-left: 1%;
+}
+
+.div-menu-formulario a:hover {
+  background-color: #f2f2f2;
+  color: #0C6B3E;
+}
+
+.div-menu-formulario i:hover {
+  background-color: #f2f2f2;
+  color: #0C6B3E;
+}
+.div-menu-formulario i {
+  float: right;
+  padding-top: 2%;
+  padding-right: 1%;
+  padding-bottom: 2.3%;
+  padding-left: 1%;
+  font-size:2vw;
+  color: #f2f2f2;
+}
+
+.div-menu-formulario img {
+	float: none;
+	padding-left: 5%;
+	height: 5vw;
+}
+
+hr {
+	background-color: #00A8CC;
+	height: 0.3vw;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 3vw;
+  right: 2vw;
+  font-size:4vw;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/********** Tabla con pagineo ********/
+.div-tabla-indicadores {
+	padding-left: 5%;
+	width: 90%;
+}
+.tableindicadores {
+	width: 100%;
+}
+.tableindicadores tr{
+  height: 2vw;
+}
+
+.pagination {
+  display: inline-block;
+  float: right;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #E9E4E6;
+  color: #212121;
+  border: 1px solid #3BB4C1;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+.button2 {
+	border-radius: 2px;
+ 	background-color: #3BB4C1;
+ 	color: #ffffff;
+ 	height: 1.5vw;
+ 	width: 5vw;
+}
+
+.button2:hover {
+  background-color: #ffffff;
+  color: #3BB4C1;
+}
+
+.button3 {
+	border-radius: 2px;
+ 	background-color: #E19898;
+ 	color: #ffffff;
+ 	height: 1.5vw;
+ 	width: 5vw;
+}
+
+.button3:hover {
+  background-color: #ffffff;
+  color: #E19898;
+}
+
+
+.tableindicadores button{
+  cursor: pointer;
+}
+
+
+.div-formulario {
+	padding-top: 3vw;
+	width: 70vw;
+	height: 30vw;
+}
+
+.div-formulario table{
+	padding-left: 30%;
+	width: 70vw;
+}
+
+.div-formulario h1{
+  font-size:4vw;
+  padding-left: 30%;
+  color: #142850;
+}
+
+.div-formulario label{
+  font-size:1.5vw;
+}
+
+.div-formulario input{
+  font-size: 1vw;
+  background-color: #f7f7f7;
+  border: 0.03vw solid #ccc;
+}
+.div-formulario select{
+  font-size: 1vw;
+  background-color: #f7f7f7;
+  width: 20vw;
+  border: 0.03vw solid #ccc;
+}
+
+.div-formulario textarea{
+	background-color: #f7f7f7;
+	border: 0.03vw solid #ccc;
+}
+
+.div-formulario button{
+  font-size: 1vw;
+  border-radius: 2px;
+  height: 2vw;
+  width: 8vw;
+  cursor: pointer;
+}
+
+.div-return button{
+  	font-size: 1vw;
+	background-color: #3BB4C1;
+	border: 0.03vw solid #ccc;
+	height: 2.5vw;
+    width: 12vw;
+	color: #ffffff;
+}
+
+.button5:hover {
+  background-color: #ffffff;
+  color: #3BB4C1;
+}
+
+.div-return{
+	float: right;
+	padding-right: 3%;
+	padding-top: 5%;
+}
+
+.div-return i{
+  	font-size: 1vw;
+}
+
+.button4 {
+	border-radius: 2px;
+ 	background-color: #58ba1d;
+ 	color: #ffffff;
+ 	border: 0.03vw solid #ccc;
+}
+
+.button4:hover {
+  background-color: #ffffff;
+  color: #58ba1d;
+}
+
+.div-tabla-2 {
+	padding-left: 10%;
+	width: 80%;
+}
+.table2 {
+	width: 70%;
+	align: center;
+}
+
+.pagination2 {
+  display: inline-block;
+  float: right;
+  padding-right:30%;
+}
+
+.pagination2 a {
+  color: black;
+  float: left;
+  padding: 0.5vw 0.5vw;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 0.1vw solid #ddd;
+}
+
+
+.pagination2 a.active {
+  background-color: #E9E4E6;
+  color: #212121;
+  border: 1px solid #3BB4C1;
+}
+
+.pagination2 a:hover:not(.active) {background-color: #ddd;}
+
+/********** Calculo Indicadores ********/
+
+
+
+
+.tab {
+  overflow: hidden;
+  padding-right: 10%;
+  padding-top: 5%;
+  float: right;
+}
+
+.tab button {
+  background-color: #EEEEEE;
+  float: right;
+  border: 0.1vw solid #ccc;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.3vw;
+  color: #00A8CC;
+  height: 2.5vw;
+  width: 9vw;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #00A8CC;
+  color: #EEEEEE;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.div-menu-calcindgeneral{
+	padding-top: 1vw;
+}
+
+.div-menu-calcindgeneral label{
+	font-size:1.1vw;
+	color: #000000;
+	float: none;
+}
+
+.div-menu-calcindgeneral select{
+	font-size: 1.1vw;
+	color: #000000;
+	float: none;
+	width: 12vw;
+	
+}
+
+.tablecalcindigen {
+	width: 35%;
+	padding-left: 5%;
+}
+
+.tablecalcindigen tr{
+	height: 2vw;
+}
+
+.sectionEncarga {
+	padding-left: 5%;
+}
+
+.sectionEncarga label{
+	font-size:1.5vw;
+	color: #3BB4C1;
+	float: none;
+}
+
+.tablecalcindEnc {
+	width: 35%;
+	padding-left: 0.9%;
+}
+.tablecalcindEnc label{
+	color: #000000;
+	font-size: 1.1vw;
+}
+
+.tablecalcindEnc input{
+	font-size: 1.1vw;
+	width: 80%;
+}
+
+.tablecalcindEnc tr{
+	height: 2.1vw;
+}
+.div-title{
+  padding-top: 1vw;
+}
+
+.div-title label{
+  font-size: 2vw;
+  color: #00A8CC;
+  float: none;
+  padding-left: 5vw;
+}
+
+.sectionVariables {
+	padding-top: 1%;
+	padding-left: 5%;
+}
+
+.sectionVariables label{
+	font-size:1.5vw;
+	color: #3BB4C1;
+}
+
+.tablecalcindVar {
+	width: 100%;
+	padding-left: 1vw;
+}
+
+.tablecalcindVar label{
+	color: #000000;
+	font-size: 1.1vw;
+}
+
+.tablecalcindVar input{
+	font-size: 1.1vw;
+	width: 80%;
+}
+
+.div-menu-calcindopc {
+	padding-right: 5vw;
+	padding-top: 1vw;
+}
+
+.btnoption{
+	float: right;
+	font-size: 1.1vw;
+	width: 10vw;
+	height: 2.2vw;
+	margin: 0.5vw;
+	background-color: #3BB4C1;
+	color: #ffffff;
+	border: 0.1vw solid #ccc;
+}
+
+.btnoption:hover{
+  background-color: #ffffff;
+  color: #3BB4C1;
+}
+
+.btnback{
+ 	float: right;
+	font-size: 1.1vw;
+	width: 10vw;
+	height: 2.2vw;
+	margin: 0.5vw;
+	background-color: #C1D8C3;
+	color: #186F65;
+	border: 0.1vw solid #ccc;
+}
+
+.btnback:hover{
+  background-color: #186F65;
+  color: #C1D8C3;
+}
+
