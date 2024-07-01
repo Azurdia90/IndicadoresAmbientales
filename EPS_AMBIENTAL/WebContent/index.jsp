@@ -17,7 +17,7 @@
 		<hr size="2vw" color="#0C6B3E" style="width: 90%; text-align: center;" />
 		<div class="scroll-page" id="page-2">
 			<div class="container">
-				<c:if test="${ not empty carretes }">
+			<c:if test="${ not empty carretes }">
 					<c:forEach items="${carretes}" var="carrete" varStatus="loop">
 						<div class="${ carrete.getClase_css() }">
 							<h1>${ carrete.getTitulo() }</h1>
@@ -25,13 +25,13 @@
 								<a href="#" class="left-arrow"><i class="fa fa-caret-left"></i></a>
 								<a href="#" class="right-arrow"><i class="fa fa-caret-right"></i></a>
 								<div class="carrusel">
-									<c:forEach items="${carrete.getLista_photos()}" var="photo"
+									<c:forEach items="${carrete.getLista_seccion()}" var="photo"
 										varStatus="loop">
 										<div class="${ photo.getClase_css() }" id="product_0">
 											<img src="${ photo.getPath_image() }" />
-											<c:if test="${ not empty photo.getTexto() }">
+											<c:if test="${ not empty photo.getTitulo() }">
 												<div class="eventotag">
-													<h5>${ photo.getTexto() }</h5>
+													<h5>${ photo.getTitulo() }</h5>
 												</div>
 											</c:if>
 										</div>
@@ -41,7 +41,6 @@
 						</div>
 					</c:forEach>
 				</c:if>
-
 
 				<!-- 				<div id="carrusel">
 				    <a href="#" class="left-arrow"><i class="fa fa-caret-left"></i></a>

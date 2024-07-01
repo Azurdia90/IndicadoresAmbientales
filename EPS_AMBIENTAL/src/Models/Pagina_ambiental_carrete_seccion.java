@@ -51,7 +51,7 @@ public class Pagina_ambiental_carrete_seccion {
 		this.carrete_id = aux.getCarrete_id();
 		this.carrete_type = aux.getCarrete_type();
 		this.codigo = aux.getCodigo();
-		this.tittle = aux.getTittle();
+		this.tittle = aux.getTitulo();
 		this.path_image = aux.getPath_image();
 		this.enlace = aux.getEnlace();
 		this.clase_css = aux.getClase_css();
@@ -109,11 +109,11 @@ public class Pagina_ambiental_carrete_seccion {
 		this.codigo = codigo;
 	}
 
-	public String getTittle() {
+	public String getTitulo() {
 		return tittle;
 	}
 
-	public void setTittle(String tittle) {
+	public void setTitulo(String tittle) {
 		this.tittle = tittle;
 	}
 

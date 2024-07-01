@@ -25,13 +25,13 @@
 								<a href="#" class="left-arrow"><i class="fa fa-caret-left"></i></a>
 								<a href="#" class="right-arrow"><i class="fa fa-caret-right"></i></a>
 								<div class="carrusel">
-									<c:forEach items="${carrete.getLista_photos()}" var="photo"
+									<c:forEach items="${carrete.getLista_seccion()}" var="photo"
 										varStatus="loop">
 										<div class="${ photo.getClase_css() }" id="product_0">
 											<img src="${ photo.getPath_image() }" />
-											<c:if test="${ not empty photo.getTexto() }">
+											<c:if test="${ not empty photo.getTitulo() }">
 												<div class="eventotag">
-													<h5>${ photo.getTexto() }</h5>
+													<h5>${ photo.getTitulo() }</h5>
 												</div>
 											</c:if>
 										</div>

@@ -135,7 +135,7 @@ public class admin_controller extends HttpServlet {
 			jsonObject.put("id", seccion.getId());
 			jsonObject.put("tipo", seccion.getCarrete_type());
 			jsonObject.put("codigo", seccion.getCodigo());
-			jsonObject.put("titulo", seccion.getTittle());
+			jsonObject.put("titulo", seccion.getTitulo());
 			jsonObject.put("enlace", seccion.getEnlace());
 			jsonObject.put("css", seccion.getClase_css());
 			jsonObject.put("visible", seccion.getVisible() ==  1 ? true : false);
