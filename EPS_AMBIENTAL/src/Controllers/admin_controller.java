@@ -224,10 +224,29 @@ public class admin_controller extends HttpServlet {
 		}
 		else if (action.equalsIgnoreCase("visible"))
 		{
+			int p_id = Integer.parseInt(request.getParameter("id")); 
+			
+			Pagina_ambiental contenido = new Pagina_ambiental();
+			
+			try {
+				contenido.visible(p_id);
+				request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
+				request.setAttribute("paginas", contenido.listar());
+				request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
+			    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
+			    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+			} 
+			catch (Exception e) 
+			{
+				 System.out.println("Exception admin_controller - doGet:" + e.getMessage());
+			}
+			
+			request.getRequestDispatcher("cgp_admin_principal.jsp").forward(request, response);
 		}
 		else
 		{
-			response.getWriter().append("Served at: " + action + " ").append(request.getContextPath());
+			request.getRequestDispatcher("not.jsp").forward(request, response);
+			System.out.println("Served at: " + action );
 		}
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}

@@ -33,21 +33,30 @@ public class mail_controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		try
+		Pagina_ambiental contenido = new Pagina_ambiental(12);
+		
+		if(contenido.getVisible() == 1)
 		{
-			Pagina_ambiental contenido = new Pagina_ambiental(12);
-			request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
-			request.setAttribute("lista_menu", contenido.getLista_titulos());
-			request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
-		    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
-		    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+			try
+			{
+				request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
+				request.setAttribute("lista_menu", contenido.getLista_titulos());
+				request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
+			    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
+			    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+			    
+			    request.getRequestDispatcher("contact.jsp").forward(request, response);
+			}
+			catch(Exception e)
+			{
+				System.out.println("Exception mail_controller - doGet:" + e.getMessage());
+			}
 		}
-		catch(Exception e)
+		else
 		{
-			System.out.println("Exception mail_controller - doGet:" + e.getMessage());
+			request.getRequestDispatcher("inc.jsp").forward(request, response);
+			System.out.println("Served at: " + request);
 		}
-	    
-	    request.getRequestDispatcher("contact.jsp").forward(request, response);
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

@@ -168,7 +168,7 @@ public class Pagina_ambiental {
 	public Pagina_ambiental buscar(int p_id)
 	{
 		Pagina_ambiental pagina_ambiental = null;
-		String sql_select = "select id, id_pagina_padre, codigo, nombre, header_image, visible, descripcion from pagina_ambiental where id = ? order by codigo ";
+		String sql_select = "select id, id_pagina_padre, codigo, nombre, header_image, visible, descripcion from pagina_ambiental where id = ? order by cast(codigo as signed)";
 		
 		try
 		{   
@@ -228,7 +228,7 @@ public class Pagina_ambiental {
 	public ArrayList<Pagina_ambiental> listar()
 	{
 		ArrayList<Pagina_ambiental>  lista_pagina_ambiental = new ArrayList<>();
-		String sql_select = "select id, id_pagina_padre, codigo, nombre, header_image, visible, descripcion from pagina_ambiental order by codigo ";
+		String sql_select = "select id, id_pagina_padre, codigo, nombre, header_image, visible, descripcion from pagina_ambiental order by cast(codigo as signed) ";
 		
 		try
 		{   
@@ -266,7 +266,7 @@ public class Pagina_ambiental {
 	public ArrayList<String> listarTitulos()
 	{
 		ArrayList<String>  lista_titulos_pagina_ambiental = new ArrayList<>();
-		String sql_select = "select id, nombre from pagina_ambiental order by codigo ";
+		String sql_select = "select id, nombre from pagina_ambiental order by cast(codigo as signed) ";
 		
 		try
 		{
@@ -333,6 +333,34 @@ public class Pagina_ambiental {
 		catch(Exception e)
 		{
 			System.out.println("Pagina_ambiental modificar(int p_id, String p_nombre, String p_header_image, boolean p_visible, String p_descripcion):" + e.getMessage());
+			return false;
+		}
+	}
+	
+	public boolean visible(int p_id)
+	{
+		Pagina_ambiental pagina_aux = null;
+		String sql_update = " update pagina_ambiental set visible = !visible"
+						  + " where id = ?";
+		
+		try
+		{   
+			conmysql = new ConnectionMySQL();
+			conn = conmysql.getConn();
+			
+			ps = conn.prepareStatement(sql_update);
+			ps.setInt(1,p_id);
+			
+			int result_update = ps.executeUpdate();
+			
+			ps.close();
+			conn.close();
+			
+			return true;
+		}
+		catch(Exception e)
+		{
+			System.out.println("public boolean visble(int p_id, boolean p_visible):" + e.getMessage());
 			return false;
 		}
 	}

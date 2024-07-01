@@ -29,26 +29,34 @@ public class eju_energia_controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-Pagina_ambiental contenido = new Pagina_ambiental(14);
+		Pagina_ambiental contenido = new Pagina_ambiental(14);
 		
-		try
+		if(contenido.getVisible() == 1)
 		{
-			request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
-			request.setAttribute("lista_menu", contenido.getLista_titulos());
-			request.setAttribute("tittle", contenido.getNombre());
-			request.setAttribute("header_image", contenido.getPath_header_image());
-			request.setAttribute("secciones", contenido.getLista_secciones());
-			request.setAttribute("carretes", contenido.getLista_carrete());
-			request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
-		    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
-		    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+			try
+			{
+				request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
+				request.setAttribute("lista_menu", contenido.getLista_titulos());
+				request.setAttribute("tittle", contenido.getNombre());
+				request.setAttribute("header_image", contenido.getPath_header_image());
+				request.setAttribute("secciones", contenido.getLista_secciones());
+				request.setAttribute("carretes", contenido.getLista_carrete());
+				request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
+			    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
+			    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+			    
+			    request.getRequestDispatcher("eju-energia.jsp").forward(request, response);
+			}
+			catch(Exception e)
+			{
+				System.out.println("Exception eju_energia_controller - doGet:" + e.getMessage());
+			}
 		}
-		catch(Exception e)
+		else
 		{
-			System.out.println("Exception eju_energia_controller - doGet:" + e.getMessage());
+			request.getRequestDispatcher("inc.jsp").forward(request, response);
+			System.out.println("Served at: " + request);
 		}
-		
-		request.getRequestDispatcher("eju-energia.jsp").forward(request, response);
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

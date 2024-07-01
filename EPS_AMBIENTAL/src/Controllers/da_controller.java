@@ -31,26 +31,34 @@ public class da_controller extends HttpServlet {
 		// TODO Auto-generated method stub
 		Pagina_ambiental contenido = new Pagina_ambiental(3);
 		
-		try
+		if(contenido.getVisible() == 1)
 		{
-			request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
-			request.setAttribute("lista_menu", contenido.getLista_titulos());
-			request.setAttribute("tittle", contenido.getNombre());
-			request.setAttribute("header_image", contenido.getPath_header_image());
-			request.setAttribute("secciones", contenido.getLista_secciones());
-			request.setAttribute("carretes", contenido.getLista_carrete());
-			request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
-		    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
-		    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
-			
-			request.setAttribute("menus", contenido.getLista_menu());
+			try
+			{
+				request.setAttribute("menu_logo", components_web_controller.getInstance().menu_logo);
+				request.setAttribute("lista_menu", contenido.getLista_titulos());
+				request.setAttribute("tittle", contenido.getNombre());
+				request.setAttribute("header_image", contenido.getPath_header_image());
+				request.setAttribute("secciones", contenido.getLista_secciones());
+				request.setAttribute("carretes", contenido.getLista_carrete());
+				request.setAttribute("footer_logo1", components_web_controller.getInstance().footer_logo1);
+			    request.setAttribute("footer_logo2", components_web_controller.getInstance().footer_logo2);
+			    request.setAttribute("footer_logo3", components_web_controller.getInstance().footer_logo3);
+				
+				request.setAttribute("menus", contenido.getLista_menu());
+				
+				request.getRequestDispatcher("da.jsp").forward(request, response);
+			}
+			catch(Exception e)
+			{
+				System.out.println("Exception da_controller - doGet:" + e.getMessage());
+			}
 		}
-		catch(Exception e)
+		else
 		{
-			System.out.println("Exception da_controller - doGet:" + e.getMessage());
-		}
-		
-		request.getRequestDispatcher("da.jsp").forward(request, response);
+			request.getRequestDispatcher("inc.jsp").forward(request, response);
+			System.out.println("Served at: " + request);
+		}		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

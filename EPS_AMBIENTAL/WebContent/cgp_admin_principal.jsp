@@ -42,7 +42,7 @@
 	<script>
 	    document.addEventListener("DOMContentLoaded", function () {
 	        var editbuttons = document.querySelectorAll("[name=btnedit]");
-	        var deletebuttons = document.querySelectorAll("[name=btnvisible]");
+	        var visiblebuttons = document.querySelectorAll("[name=btnvisible]");
 	
 	        editbuttons.forEach(function (edit_button) {
 	            edit_button.addEventListener("click", function () {
@@ -56,21 +56,34 @@
 	            });
 	        });
 	
-	        deletebuttons.forEach(function (delete_button) {
-	            delete_button.addEventListener("click", function () {
+	        visiblebuttons.forEach(function (visible_button) {
+	            visible_button.addEventListener("click", function () {
+	                // Find the parent row of the clicked edit button
+	                var row = visible_button.closest("tr");
+	
+	                // Get the data-variable-id attribute from the row
+	                var variableId = row.getAttribute("data-variable-id");
+	
+	                window.location.href = "admin_controller?command=visible&id=" + variableId;
+	            });
+	        });
+	        
+	        
+	        visiblebuttons.forEach(function (visible_button) {
+	            visible_button.addEventListener("click", function () {
 	                // Find the parent row of the clicked delete button
-	                var row = delete_button.closest("tr");
+	                var row = visible_button.closest("tr");
 	
 	                // Get the data-variable-id attribute from the row
 	                var variableId = row.getAttribute("data-variable-id");
 	
 	                // Send a POST request to delete the item
-	                fetch("ods_controlador?command=delete&id=" + variableId, {
+	                fetch("ods_controlador?command=visible&id=" + variableId, {
 	                    method: "DELETE",
 	                    headers: {
 	                        "Content-Type": "application/x-www-form-urlencoded",
 	                    },
-	                    body: "command=delete&id=" + variableId,
+	                    body: "command=visible&id=" + variableId,
 	                })
 	                .then(function(response) {
 	                    if (response.ok) {
@@ -78,7 +91,7 @@
 	                        row.remove();
 	                    } else {
 	                        // Handle errors
-	                        console.error("Failed to delete item.");
+	                        console.error("Failed to visible item.");
 	                    }
 	                })
 	                .catch(function(error) {
